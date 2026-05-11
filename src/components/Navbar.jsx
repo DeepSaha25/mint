@@ -37,7 +37,7 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className={`site-nav fixed inset-x-0 top-0 z-50 px-6 py-4 transition duration-300 ${scrolled || open ? 'is-scrolled text-ink' : 'text-white'}`}>
+    <header className={`site-nav fixed inset-x-0 top-0 z-50 px-4 py-3.5 transition duration-300 sm:px-6 sm:py-4 ${scrolled || open ? 'is-scrolled text-ink' : 'text-white'}`}>
       <nav className="mx-auto flex max-w-[1080px] items-center justify-between">
         <Logo scrolled={scrolled || open} />
         <div className="hidden items-center gap-8 text-[15px] font-semibold lg:flex">
@@ -56,7 +56,7 @@ export default function Navbar() {
           </a>
         </div>
         <button
-          className="grid size-9 place-items-center rounded-full lg:hidden"
+          className="grid size-10 place-items-center rounded-full lg:hidden"
           aria-label={open ? 'Close menu' : 'Open menu'}
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}
@@ -65,9 +65,9 @@ export default function Navbar() {
         </button>
       </nav>
       <div className={`mobile-menu lg:hidden ${open ? 'is-open' : ''}`}>
-        <div className="mx-auto flex max-w-[1080px] flex-col px-6 py-6">
+        <div className="mx-auto flex max-w-[1080px] flex-col px-4 py-5 sm:px-6 sm:py-6">
           {navLinks.map((link) => (
-            <a key={link} href="#" className="border-b border-border py-4 text-lg font-semibold" onClick={() => setOpen(false)}>
+            <a key={link} href="#" className="border-b border-border py-3.5 text-[17px] font-semibold sm:py-4 sm:text-lg" onClick={() => setOpen(false)}>
               {link}
             </a>
           ))}

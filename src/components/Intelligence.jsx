@@ -91,15 +91,15 @@ function AssistantMock() {
 
 export default function Intelligence() {
   return (
-    <AnimatedSection className="mx-auto max-w-[1024px] bg-white px-4 pb-28 sm:px-6 md:pb-64">
+    <AnimatedSection className="mx-auto max-w-[1024px] bg-white px-4 pb-20 sm:px-6 sm:pb-28 md:pb-64">
       <div className="mx-auto max-w-[560px] text-center">
         <h2 className="text-[32px] font-semibold leading-[1.1] text-ink sm:text-[40px]">Built for the intelligence age</h2>
         <p className="mt-4 text-sm leading-6 text-muted">
           Integrate AI into every part of your docs lifecycle. Woven into how your knowledge is written, maintained, and understood by both users and LLMs.
         </p>
       </div>
-      <div className="mt-14 grid gap-5 md:grid-cols-2">
-        <article className="min-h-[430px] rounded-2xl border border-border p-5 sm:p-7 md:min-h-[520px] md:p-10">
+      <div className="mt-12 grid gap-5 md:mt-14 md:grid-cols-2">
+        <article className="rounded-2xl border border-border p-5 sm:p-7 md:min-h-[520px] md:p-10">
           <p className="text-[11px] font-bold uppercase tracking-wide text-brand">LLMs.txt & MCP</p>
           <h3 className="mt-4 text-2xl font-semibold text-ink">Built for both people and AI</h3>
           <p className="mt-3 max-w-[390px] text-sm leading-6 text-muted">
@@ -107,7 +107,7 @@ export default function Intelligence() {
           </p>
           <MiniBrowser />
         </article>
-        <article className="min-h-[430px] rounded-2xl border border-border p-5 sm:p-7 md:min-h-[520px] md:p-10">
+        <article className="rounded-2xl border border-border p-5 sm:p-7 md:min-h-[520px] md:p-10">
           <p className="text-[11px] font-bold uppercase tracking-wide text-brand">Agent</p>
           <h3 className="mt-4 text-2xl font-semibold text-ink">Self-updating knowledge management</h3>
           <p className="mt-3 max-w-[390px] text-sm leading-6 text-muted">
@@ -116,7 +116,7 @@ export default function Intelligence() {
           <AgentFlow />
         </article>
       </div>
-      <article className="mt-5 min-h-[500px] rounded-2xl border border-border px-5 py-10 text-center sm:px-6 md:min-h-[580px] md:px-8 md:py-12">
+      <article className="mt-5 rounded-2xl border border-border px-5 py-10 text-center sm:px-6 md:min-h-[560px] md:px-8 md:py-12">
         <p className="text-[11px] font-bold uppercase tracking-wide text-brand">Assistant</p>
         <h4 className="mt-4 text-2xl font-semibold text-ink">Intelligent assistance for your users</h4>
         <p className="mx-auto mt-3 max-w-[440px] text-sm leading-6 text-muted">

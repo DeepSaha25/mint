@@ -92,10 +92,10 @@ const logos = [
 
 export default function LogoStrip() {
   return (
-    <section className="bg-white px-4 pb-24 pt-7 sm:px-6 md:pb-[286px] md:pt-0">
-      <div className="mx-auto grid max-w-[910px] grid-cols-2 items-center gap-x-8 gap-y-8 text-center sm:grid-cols-4 md:gap-x-16">
+    <section className="bg-white px-4 pb-16 pt-7 sm:px-6 sm:pb-20 md:pb-40 md:pt-0">
+      <div className="mx-auto grid max-w-[910px] grid-cols-2 items-center gap-x-4 gap-y-6 text-center sm:grid-cols-4 sm:gap-x-8 sm:gap-y-8 md:gap-x-16">
         {logos.map((logo, index) => (
-          <div key={index} className="flex h-10 items-center justify-center">
+          <div key={index} className="flex h-9 items-center justify-center sm:h-10">
             {logo}
           </div>
         ))}

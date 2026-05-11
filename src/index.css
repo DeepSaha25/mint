@@ -406,6 +406,14 @@ canvas {
   header {
     padding-inline: 16px;
   }
+
+  .mobile-menu {
+    inset: 64px 0 auto;
+  }
+
+  .mobile-menu.is-open {
+    max-height: calc(100dvh - 64px);
+  }
 }
 
 @media (max-width: 420px) {
@@ -414,7 +422,7 @@ canvas {
   }
 
   main section:first-child form {
-    max-width: calc(100vw - 32px);
+    max-width: 100%;
   }
 }
 
