@@ -1,4 +1,5 @@
 import { Logo } from './Navbar.jsx';
+import ThemeSwitch from './shared/ThemeSwitch.jsx';
 import { footerGroups } from '../data/siteData.js';
 
 export default function Footer() {
@@ -35,11 +36,7 @@ export default function Footer() {
             All systems normal
           </a>
           <p>© 2026 Mintlify, Inc.</p>
-          <div className="flex gap-3">
-            <span className="size-2 rounded-full bg-ink" />
-            <span className="size-2 rounded-full border border-ink" />
-            <span className="size-2 rounded-full bg-muted" />
-          </div>
+          <ThemeSwitch />
         </div>
       </div>
     </footer>

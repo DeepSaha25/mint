@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { assets, navLinks } from '../data/siteData.js';
+import { assets, footerGroups, navLinks } from '../data/siteData.js';
+import ThemeSwitch from './shared/ThemeSwitch.jsx';
 
 function Logo({ dark = false, scrolled = false }) {
   return (
@@ -64,20 +65,29 @@ export default function Navbar() {
           {open ? <X size={22} strokeWidth={2} /> : <Menu size={22} strokeWidth={2} />}
         </button>
       </nav>
-      <div className={`mobile-menu lg:hidden ${open ? 'is-open' : ''}`}>
-        <div className="mx-auto flex max-w-[1080px] flex-col px-4 py-5 sm:px-6 sm:py-6">
-          {navLinks.map((link) => (
-            <a key={link} href="#" className="border-b border-border py-3.5 text-[17px] font-semibold sm:py-4 sm:text-lg" onClick={() => setOpen(false)}>
-              {link}
+      <div className={`mobile-menu mobile-footer-sheet lg:hidden ${open ? 'is-open' : ''}`}>
+        <div className="mx-auto flex max-w-[1080px] flex-col border-t border-border/80 px-4 py-7 sm:px-6">
+          <div className="grid grid-cols-2 gap-x-8 gap-y-9">
+            {Object.entries(footerGroups).map(([title, links]) => (
+              <div key={title}>
+                <h3 className="mb-4 text-[11px] font-bold uppercase tracking-wide text-muted">{title}</h3>
+                <ul className="space-y-3">
+                  {links.map((link) => (
+                    <li key={link}>
+                      <a href="#" className="text-[15px] font-semibold text-ink transition hover:text-brand" onClick={() => setOpen(false)}>
+                        {link}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 flex items-center justify-between border-t border-border/80 pt-6">
+            <a href="#" className="text-xs font-medium text-muted" onClick={() => setOpen(false)}>
+              © 2026 Mintlify, Inc.
             </a>
-          ))}
-          <div className="mt-6 grid gap-3">
-            <a href="#" className="rounded-full border border-border px-5 py-3 text-center text-sm font-semibold" onClick={() => setOpen(false)}>
-              Contact sales
-            </a>
-            <a href="#" className="keep-white rounded-full bg-white px-5 py-3 text-center text-sm font-semibold" style={{ color: '#050506' }} onClick={() => setOpen(false)}>
-              Start for free
-            </a>
+            <ThemeSwitch compact />
           </div>
         </div>
       </div>
