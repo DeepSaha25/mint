@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #0aa879;
+  --color-ink: #050506;
+  --color-muted: #737373;
+  --color-soft: rgba(5, 5, 6, 0.03);
+  --color-border: rgba(5, 5, 6, 0.08);
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: white;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #050506;
+  background: white;
+  text-rendering: geometricPrecision;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+@media (max-width: 767px) {
+  .text-\[40px\] {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  header {
+    padding-inline: 22px;
+  }
+
+  main section:first-child {
+    height: 760px;
+    min-height: 760px;
+  }
+
+  main section:first-child h1 {
+    max-width: 350px;
+    font-size: 40px;
+    line-height: 1.08;
+  }
+
+  main section:first-child p {
+    font-size: 18px;
+  }
+
+  main section:first-child form {
+    height: 54px;
+    max-width: 340px;
+  }
+
+  main section:first-child form button {
+    height: 42px;
+  }
+
+  .hero-shot {
+    position: absolute;
+    top: 555px;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    padding-inline: 0;
+  }
+
+  .hero-shot img {
+    width: 700px;
+    max-width: none;
+    transform: translateX(-23%);
+  }
+}
