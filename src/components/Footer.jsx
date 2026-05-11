@@ -1,11 +1,11 @@
-﻿import { Logo } from './Navbar.jsx';
+import { Logo } from './Navbar.jsx';
 import { footerGroups } from '../data/siteData.js';
 
 export default function Footer() {
   return (
-    <footer className="bg-soft px-6 py-20">
+    <footer className="bg-soft px-4 py-16 sm:px-6 sm:py-20">
       <div className="mx-auto max-w-[1024px]">
-        <div className="flex items-center justify-between border-b border-border pb-12">
+        <div className="flex flex-col items-start gap-6 border-b border-border pb-12 sm:flex-row sm:items-center sm:justify-between">
           <Logo dark />
           <div className="flex items-center gap-5 text-xs font-semibold text-muted">
             <span>in</span>

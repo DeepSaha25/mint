@@ -4,16 +4,16 @@ import { customerCards } from '../data/siteData.js';
 
 export default function Customers() {
   return (
-    <AnimatedSection className="overflow-hidden bg-white px-6 py-28">
+    <AnimatedSection className="overflow-hidden bg-white px-4 py-20 sm:px-6 md:py-28">
       <div className="mx-auto max-w-[1024px] text-center">
-        <h2 className="text-[40px] font-semibold leading-tight text-ink">Loved by your favorite companies</h2>
+        <h2 className="text-[32px] font-semibold leading-tight text-ink sm:text-[40px]">Loved by your favorite companies</h2>
         <p className="mx-auto mt-4 max-w-[520px] text-sm leading-6 text-muted">
           From frontier AI companies to consumer brands, leaders across industries scale knowledge with Mintlify.
         </p>
       </div>
-      <div className="mx-auto mt-16 flex max-w-[1180px] gap-5 overflow-hidden md:grid md:grid-cols-3">
+      <div className="mx-auto mt-12 grid max-w-[1180px] gap-10 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-5">
         {customerCards.map((card) => (
-          <article key={card.name} className="min-w-[310px] flex-1 md:min-w-0">
+          <article key={card.name} className="min-w-0">
             <div className="overflow-hidden rounded-lg bg-[#d7d7d7]">
               <img src={card.image} alt={card.name} className="h-[222px] w-full object-cover grayscale" />
             </div>
@@ -24,7 +24,7 @@ export default function Customers() {
           </article>
         ))}
       </div>
-      <div className="mt-12 flex items-center justify-center gap-3">
+      <div className="mt-12 hidden items-center justify-center gap-3">
         <button className="grid size-7 place-items-center rounded-full bg-ink text-white" aria-label="Previous slide">
           <ArrowLeft size={13} />
         </button>

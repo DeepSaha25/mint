@@ -4,16 +4,16 @@ import ButtonLink from './shared/ButtonLink.jsx';
 
 export default function CTA() {
   return (
-    <AnimatedSection className="bg-white px-6 pb-64 pt-8 text-center">
+    <AnimatedSection className="bg-white px-4 pb-36 pt-8 text-center sm:px-6 md:pb-64">
       <div className="mx-auto max-w-[560px]">
-        <h3 className="text-[40px] font-semibold leading-[1.05] text-ink">Make documentation your winning advantage</h3>
+        <h3 className="text-[32px] font-semibold leading-[1.05] text-ink sm:text-[40px]">Make documentation your winning advantage</h3>
         <p className="mx-auto mt-5 max-w-[430px] text-sm leading-6 text-muted">Join the leaders of tomorrow to future proof your documentation today.</p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <ButtonLink>Get started for free</ButtonLink>
           <ButtonLink variant="light" className="border border-border">Get a demo</ButtonLink>
         </div>
       </div>
-      <div className="mx-auto mt-24 grid max-w-[760px] gap-14 md:grid-cols-2">
+      <div className="mx-auto mt-20 grid max-w-[760px] gap-14 md:mt-24 md:grid-cols-2">
         <a href="#" className="group text-center">
           <span className="mx-auto grid size-11 place-items-center rounded-xl border border-border bg-white text-brand shadow-sm">
             <BadgeDollarSign size={20} />

@@ -340,11 +340,6 @@ canvas {
     color: #ffffff !important;
   }
 
-  .bg-ink.text-white,
-  .bg-ink .text-white {
-    color: #050506 !important;
-  }
-
   .site-nav.is-scrolled {
     background: rgba(5, 5, 6, 0.82);
     border-bottom-color: rgba(255, 255, 255, 0.12);
@@ -385,10 +380,6 @@ canvas {
 }
 
 @media (max-width: 767px) {
-  .text-\[40px\] {
-    font-size: 30px;
-  }
-
   .brand-logo {
     transform: scale(0.82);
     transform-origin: center;
@@ -409,65 +400,11 @@ canvas {
   .paypal-logo {
     font-size: 24px;
   }
-
-  .mini-browser,
-  .assistant-mock {
-    transform: scale(0.82);
-    transform-origin: top center;
-    margin-bottom: -42px;
-  }
-
-  .agent-flow {
-    transform: scale(0.78);
-    transform-origin: top center;
-    margin-inline: -60px;
-  }
 }
 
 @media (max-width: 640px) {
   header {
-    padding-inline: 22px;
-  }
-
-  main section:first-child {
-    height: 790px;
-    min-height: 790px;
-  }
-
-  main section:first-child h1 {
-    max-width: 350px;
-    font-size: 40px;
-    line-height: 1.08;
-  }
-
-  main section:first-child p {
-    font-size: 18px;
-  }
-
-  main section:first-child form {
-    height: 54px;
-    max-width: 340px;
-  }
-
-  main section:first-child form button {
-    height: 42px;
-  }
-
-  .hero-shot {
-    position: absolute;
-    top: 575px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    margin-top: 0;
-    padding-inline: 0;
-  }
-
-  .hero-shot img {
-    width: 680px;
-    max-width: none;
-    transform: translateX(-22%);
-    border-radius: 14px;
+    padding-inline: 16px;
   }
 }
 
@@ -478,15 +415,6 @@ canvas {
 
   main section:first-child form {
     max-width: calc(100vw - 32px);
-  }
-
-  main section:first-child form input {
-    width: 0;
-  }
-
-  .hero-shot img {
-    width: 640px;
-    transform: translateX(-25%);
   }
 }
 

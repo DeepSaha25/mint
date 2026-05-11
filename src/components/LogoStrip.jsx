@@ -92,8 +92,8 @@ const logos = [
 
 export default function LogoStrip() {
   return (
-    <section className="bg-white px-6 pb-[138px] pt-7 md:pb-[286px] md:pt-0">
-      <div className="mx-auto grid max-w-[910px] grid-cols-2 items-center gap-x-16 gap-y-8 text-center sm:grid-cols-4">
+    <section className="bg-white px-4 pb-24 pt-7 sm:px-6 md:pb-[286px] md:pt-0">
+      <div className="mx-auto grid max-w-[910px] grid-cols-2 items-center gap-x-8 gap-y-8 text-center sm:grid-cols-4 md:gap-x-16">
         {logos.map((logo, index) => (
           <div key={index} className="flex h-10 items-center justify-center">
             {logo}

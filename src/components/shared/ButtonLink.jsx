@@ -9,7 +9,7 @@ export default function ButtonLink({ children, variant = 'dark', className = '' 
   return (
     <a
       href="#"
-      className={`inline-flex h-10 items-center justify-center rounded-full px-5 text-sm font-semibold transition ${styles} ${className}`}
+      className={`inline-flex h-10 items-center justify-center rounded-full px-5 text-center text-sm font-semibold transition ${styles} ${className}`}
     >
       {children}
     </a>
