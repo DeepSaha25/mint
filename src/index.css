@@ -38,6 +38,34 @@ input {
   font: inherit;
 }
 
+.site-nav {
+  background: transparent;
+}
+
+.site-nav.is-scrolled {
+  background: rgba(255, 255, 255, 0.82);
+  border-bottom: 1px solid rgba(5, 5, 6, 0.08);
+  box-shadow: 0 8px 30px rgba(5, 5, 6, 0.06);
+  backdrop-filter: blur(18px);
+  color: #050506 !important;
+}
+
+.site-nav .contact-link {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.site-nav .contact-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.site-nav.is-scrolled .contact-link {
+  background: rgba(5, 5, 6, 0.04);
+}
+
+.site-nav.is-scrolled .contact-link:hover {
+  background: rgba(5, 5, 6, 0.08);
+}
+
 .brand-logo {
   display: inline-flex;
   align-items: center;
@@ -254,6 +282,21 @@ input {
   .bg-ink.text-white,
   .bg-ink .text-white {
     color: #050506 !important;
+  }
+
+  .site-nav.is-scrolled {
+    background: rgba(5, 5, 6, 0.82);
+    border-bottom-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    color: #f7f7f8 !important;
+  }
+
+  .site-nav.is-scrolled .contact-link {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .site-nav.is-scrolled .contact-link:hover {
+    background: rgba(255, 255, 255, 0.14);
   }
 
   main section:first-child > .absolute.bottom-0 {
