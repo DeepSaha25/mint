@@ -8,7 +8,7 @@ export default function CTA() {
       <div className="mx-auto max-w-[560px]">
         <h3 className="text-[40px] font-semibold leading-[1.05] text-ink">Make documentation your winning advantage</h3>
         <p className="mx-auto mt-5 max-w-[430px] text-sm leading-6 text-muted">Join the leaders of tomorrow to future proof your documentation today.</p>
-        <div className="mt-8 flex justify-center gap-3">
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
           <ButtonLink>Get started for free</ButtonLink>
           <ButtonLink variant="light" className="border border-border">Get a demo</ButtonLink>
         </div>

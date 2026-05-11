@@ -1,9 +1,9 @@
-import { Bot, Check, Copy, FileText, Sparkles, Zap } from 'lucide-react';
+import { Check, Copy, FileText, Sparkles, Zap } from 'lucide-react';
 import AnimatedSection from './shared/AnimatedSection.jsx';
 
 function MiniBrowser() {
   return (
-    <div className="relative mx-auto mt-16 h-[230px] max-w-[410px]">
+    <div className="mini-browser relative mx-auto mt-16 h-[230px] max-w-[410px]">
       <div className="absolute left-3 top-4 h-[130px] w-[230px] origin-bottom rotate-[-8deg] rounded-[14px] border border-border bg-white p-3 shadow-sm">
         <div className="h-3.5 w-24 rounded bg-soft" />
         <div className="mt-5 space-y-2">
@@ -40,7 +40,7 @@ function MiniBrowser() {
 function AgentFlow() {
   const icons = [Check, FileText, Sparkles, Zap];
   return (
-    <div className="mt-20 flex items-center justify-center">
+    <div className="agent-flow mt-20 flex items-center justify-center">
       {icons.map((Icon, index) => (
         <div key={index} className="flex items-center">
           <span className={`grid size-16 place-items-center rounded-full ${index === 3 ? 'bg-white' : 'bg-black/5'}`}>
@@ -57,7 +57,7 @@ function AgentFlow() {
 
 function AssistantMock() {
   return (
-    <div className="relative mx-auto mt-16 h-[265px] max-w-[690px] overflow-hidden">
+    <div className="assistant-mock relative mx-auto mt-16 h-[265px] max-w-[690px] overflow-hidden">
       <div className="absolute left-0 top-20 hidden h-[150px] w-[230px] rounded-xl border border-border bg-white p-4 opacity-50 md:block">
         <div className="mb-4 h-3 w-24 rounded bg-soft" />
         <div className="grid grid-cols-3 gap-2">

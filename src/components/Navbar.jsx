@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { assets, navLinks } from '../data/siteData.js';
 
 function Logo({ dark = false, scrolled = false }) {
@@ -19,6 +19,7 @@ function Logo({ dark = false, scrolled = false }) {
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const update = () => setScrolled(window.scrollY > 40);
@@ -28,10 +29,17 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', update);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [open]);
+
   return (
-    <header className={`site-nav fixed inset-x-0 top-0 z-50 px-6 py-4 transition duration-300 ${scrolled ? 'is-scrolled text-ink' : 'text-white'}`}>
+    <header className={`site-nav fixed inset-x-0 top-0 z-50 px-6 py-4 transition duration-300 ${scrolled || open ? 'is-scrolled text-ink' : 'text-white'}`}>
       <nav className="mx-auto flex max-w-[1080px] items-center justify-between">
-        <Logo scrolled={scrolled} />
+        <Logo scrolled={scrolled || open} />
         <div className="hidden items-center gap-8 text-[15px] font-semibold lg:flex">
           {navLinks.map((link) => (
             <a key={link} href="#" className="transition hover:opacity-70">
@@ -47,10 +55,32 @@ export default function Navbar() {
             Start for free
           </a>
         </div>
-        <button className="grid size-9 place-items-center rounded-full lg:hidden" aria-label="Open menu">
-          <Menu size={22} strokeWidth={2} />
+        <button
+          className="grid size-9 place-items-center rounded-full lg:hidden"
+          aria-label={open ? 'Close menu' : 'Open menu'}
+          aria-expanded={open}
+          onClick={() => setOpen((value) => !value)}
+        >
+          {open ? <X size={22} strokeWidth={2} /> : <Menu size={22} strokeWidth={2} />}
         </button>
       </nav>
+      <div className={`mobile-menu lg:hidden ${open ? 'is-open' : ''}`}>
+        <div className="mx-auto flex max-w-[1080px] flex-col px-6 py-6">
+          {navLinks.map((link) => (
+            <a key={link} href="#" className="border-b border-border py-4 text-lg font-semibold" onClick={() => setOpen(false)}>
+              {link}
+            </a>
+          ))}
+          <div className="mt-6 grid gap-3">
+            <a href="#" className="rounded-full border border-border px-5 py-3 text-center text-sm font-semibold" onClick={() => setOpen(false)}>
+              Contact sales
+            </a>
+            <a href="#" className="keep-white rounded-full bg-white px-5 py-3 text-center text-sm font-semibold" style={{ color: '#050506' }} onClick={() => setOpen(false)}>
+              Start for free
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
   );
 }

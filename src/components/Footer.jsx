@@ -1,4 +1,4 @@
-import { Logo } from './Navbar.jsx';
+﻿import { Logo } from './Navbar.jsx';
 import { footerGroups } from '../data/siteData.js';
 
 export default function Footer() {
@@ -45,3 +45,4 @@ export default function Footer() {
     </footer>
   );
 }
+
