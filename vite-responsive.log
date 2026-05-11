@@ -134,3 +134,4 @@ This will cause a hydration error.
       at async viteTransformMiddleware (file:///C:/Users/Deep%20Saha/Desktop/mint/node_modules/vite/dist/node/chunks/node.js:24305:20)
 [2m8:36:08 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/components/Hero.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
 [2m8:36:21 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Hero.jsx, /src/index.css[22m
+[2m8:36:41 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Hero.jsx, /src/index.css[22m
