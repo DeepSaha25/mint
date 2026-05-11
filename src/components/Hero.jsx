@@ -38,10 +38,16 @@ export default function Hero() {
           </button>
         </form>
       </motion.div>
-      <div className="hero-shot relative z-10 mx-auto mt-[98px] max-w-[1074px] px-6 md:px-0">
+      <div className="hero-shot relative z-10 mx-auto mt-[98px] aspect-[1080/657] w-[calc(100%-48px)] max-w-[1080px] md:w-[min(1080px,calc(100vw-220px))]">
         <picture>
           <source srcSet={assets.heroImageDark} media="(prefers-color-scheme: dark)" />
-          <img src={assets.heroImage} alt="Hero illustration" className="block w-full select-none rounded-[22px] bg-white shadow-none" />
+          <img
+            src={assets.heroImage}
+            alt="Hero illustration"
+            width="1080"
+            height="657"
+            className="block h-auto w-full select-none rounded-[22px] bg-white shadow-none"
+          />
         </picture>
       </div>
     </section>
