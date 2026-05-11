@@ -75,6 +75,11 @@ input {
   background: rgba(5, 5, 6, 0.85) !important;
 }
 
+.button-link-dark,
+.button-link-ghost {
+  color: #ffffff !important;
+}
+
 .brand-logo {
   display: inline-flex;
   align-items: center;
@@ -295,6 +300,19 @@ input {
 
   .enterprise-cta:hover {
     background: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  .button-link-dark {
+    background: #ffffff !important;
+    color: #050506 !important;
+  }
+
+  .button-link-dark:hover {
+    background: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  .button-link-ghost {
+    color: #ffffff !important;
   }
 
   .bg-ink.text-white,
