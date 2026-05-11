@@ -321,6 +321,10 @@ input {
     background-image: linear-gradient(to bottom, transparent, rgba(5, 5, 6, 0.92), #050506) !important;
   }
 
+  .hero-bg {
+    background-image: url('https://www.mintlify.com/hero/bg-dark.webp') !important;
+  }
+
   .hero-shot img {
     background-color: #050506 !important;
   }

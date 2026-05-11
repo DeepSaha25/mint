@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-[1210px] overflow-hidden pt-[96px] text-white md:min-h-[1208px] md:pt-[96px]">
       <div
-        className="absolute inset-x-0 top-[-94px] h-[1142px] bg-cover bg-center"
+        className="hero-bg absolute inset-x-0 top-[-94px] h-[1142px] bg-cover bg-center"
         style={{ backgroundImage: `url(${assets.heroBg})` }}
       />
       <div className="absolute inset-x-0 bottom-0 h-[360px] bg-gradient-to-b from-transparent via-white/90 to-white" />
