@@ -31,7 +31,7 @@ export default function Hero() {
           <input
             aria-label="Email address"
             placeholder="Email address"
-            className="min-w-0 flex-1 bg-transparent px-3 py-1 text-[15px] font-semibold text-white outline-none placeholder:text-white/55"
+            className="min-w-0 flex-1 bg-transparent px-3 py-1 text-[15px] font-semibold text-white/95 caret-white outline-none placeholder:font-semibold placeholder:text-white/75"
           />
           <button className="keep-white h-[36px] shrink-0 rounded-full bg-white px-4 text-[15px] font-semibold shadow-sm sm:h-[34px]" style={{ color: '#050506' }}>
             Start now
