@@ -13,7 +13,11 @@ export default function Enterprise() {
             <p className="mt-5 text-sm leading-6 text-muted">Modernize without the rebuild with enterprise-grade professional service & security.</p>
           </div>
           <div className="md:text-right">
-            <a href="#" className="inline-flex h-10 items-center rounded-full bg-ink px-5 text-sm font-semibold text-white transition hover:bg-ink/85">
+            <a
+              href="#"
+              className="inline-flex h-10 items-center rounded-full bg-ink px-5 text-sm font-semibold transition hover:bg-ink/85"
+              style={{ color: '#ffffff' }}
+            >
               Explore for enterprise
             </a>
           </div>
