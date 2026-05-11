@@ -27,16 +27,24 @@ export default function Hero() {
         <p className="mt-6 max-w-[620px] text-[16px] font-medium leading-[1.45] sm:mt-7 sm:text-[18px] md:text-xl">
           Helping teams create and maintain world-class documentation built for both humans and AI
         </p>
-        <form className="mt-8 flex w-full max-w-[420px] flex-col items-stretch gap-2 rounded-2xl border border-white/25 bg-white/15 p-2 shadow-sm backdrop-blur-xl sm:h-11 sm:max-w-[360px] sm:flex-row sm:items-center sm:gap-0 sm:rounded-full sm:p-1">
+        <form className="mt-8 p-1 max-w-[22.5rem] w-full rounded-full border border-border-soft backdrop-blur-[12px] bg-border-soft flex items-center gap-1.5 dark">
           <input
-            aria-label="Email address"
-            placeholder="Email address"
-            className="min-w-0 flex-1 bg-transparent px-3 py-1 text-[15px] font-semibold text-white/95 caret-white outline-none placeholder:font-semibold placeholder:text-white/75"
-          />
-          <button className="keep-white h-[36px] shrink-0 rounded-full bg-white px-4 text-[15px] font-semibold shadow-sm sm:h-[34px]" style={{ color: '#050506' }}>
-            Start now
-          </button>
-        </form>
+              type="email"
+              required
+              inputMode="email"
+              autoComplete="email"
+              placeholder="Email address"
+              aria-label="Email address"
+              className="px-3 h-8 outline-none w-full placeholder:text-muted text-text-main text-[15px] font-medium leading-[150%] bg-transparent"
+            />
+            <button
+              data-slot="button"
+              type="submit"
+              className="inline-flex items-center outline-offset-2 h-fit focus-visible:outline-2 focus-visible:outline-brand justify-center cursor-pointer gap-1.5 whitespace-nowrap rounded-full font-medium [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-3 shrink-0 transition-[color,background-color] duration-100 shadow-button-sm bg-background-invert text-text-invert border border-background-invert hover:bg-background-invert/85 text-[15px] py-[4.5px] px-3"
+            >
+              Start now
+            </button>
+          </form>
       </motion.div>
       <div className="hero-shot relative z-10 mx-auto mt-14 aspect-[1080/657] w-[min(1080px,calc(100vw-20px))] max-w-[1080px] sm:mt-20 sm:w-[min(1080px,calc(100vw-64px))] md:mt-[98px] lg:w-[min(1080px,calc(100vw-220px))]">
         <picture>
