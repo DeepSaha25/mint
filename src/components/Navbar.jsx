@@ -29,7 +29,7 @@ export default function Navbar() {
           <a href="#" className="rounded-full bg-white/5 px-4 py-2 text-[15px] font-semibold backdrop-blur transition hover:bg-white/10">
             Contact sales
           </a>
-          <a href="#" className="rounded-full bg-white px-4 py-2 text-[15px] font-semibold transition hover:bg-white/90" style={{ color: '#050506' }}>
+          <a href="#" className="keep-white rounded-full bg-white px-4 py-2 text-[15px] font-semibold transition hover:bg-white/90" style={{ color: '#050506' }}>
             Start for free
           </a>
         </div>

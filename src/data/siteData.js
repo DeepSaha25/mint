@@ -42,5 +42,6 @@ export const footerGroups = {
 export const assets = {
   heroBg: 'https://www.mintlify.com/hero/bg-light.webp',
   heroImage: 'https://www.mintlify.com/_next/image?url=%2Fhero%2Fhero-image-light.webp&w=1080&q=75',
+  heroImageDark: 'https://www.mintlify.com/_next/image?url=%2Fhero%2Fhero-image-dark.webp&w=1080&q=75',
   anthropic: 'https://www.mintlify.com/_next/image?url=%2Fenterprise%2Fanthropic.webp&w=1920&q=75',
 };

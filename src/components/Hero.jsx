@@ -33,11 +33,16 @@ export default function Hero() {
             placeholder="Email address"
             className="min-w-0 flex-1 bg-transparent px-3 text-[15px] font-semibold text-white outline-none placeholder:text-white/55"
           />
-          <button className="h-[34px] rounded-full bg-white px-4 text-[15px] font-semibold text-ink shadow-sm">Start now</button>
+          <button className="keep-white h-[34px] rounded-full bg-white px-4 text-[15px] font-semibold shadow-sm" style={{ color: '#050506' }}>
+            Start now
+          </button>
         </form>
       </motion.div>
       <div className="hero-shot relative z-10 mx-auto mt-[98px] max-w-[1074px] px-6 md:px-0">
-        <img src={assets.heroImage} alt="Hero illustration" className="block w-full select-none rounded-[22px] bg-white shadow-none" />
+        <picture>
+          <source srcSet={assets.heroImageDark} media="(prefers-color-scheme: dark)" />
+          <img src={assets.heroImage} alt="Hero illustration" className="block w-full select-none rounded-[22px] bg-white shadow-none" />
+        </picture>
       </div>
     </section>
   );
