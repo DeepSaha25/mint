@@ -40,6 +40,8 @@ export const footerGroups = {
 };
 
 export const assets = {
+  logoWordmark: '/assets/brand/mintlify-wordmark.svg',
+  logoIcon: '/assets/brand/mintlify-icon.svg',
   heroBg: 'https://www.mintlify.com/hero/bg-light.webp',
   heroImage: 'https://www.mintlify.com/_next/image?url=%2Fhero%2Fhero-image-light.webp&w=1080&q=75',
   heroImageDark: 'https://www.mintlify.com/_next/image?url=%2Fhero%2Fhero-image-dark.webp&w=1080&q=75',

@@ -1,14 +1,17 @@
 import { Menu } from 'lucide-react';
-import { navLinks } from '../data/siteData.js';
+import { assets, navLinks } from '../data/siteData.js';
 
 function Logo({ dark = false }) {
   return (
-    <a href="#" className={`flex items-center gap-2 font-bold tracking-tight ${dark ? 'text-ink' : 'text-white'}`}>
-      <span className="relative grid size-[22px] place-items-center rounded-[7px] bg-brand">
-        <span className="absolute left-1 top-1 h-3 w-2 rotate-45 rounded-full bg-teal-300/90" />
-        <span className="absolute bottom-1 right-1 h-3 w-2 rotate-45 rounded-full bg-emerald-700/50" />
-      </span>
-      <span className="text-[26px] leading-none">mintlify</span>
+    <a href="#" className="flex items-center" aria-label="Mintlify home">
+      {dark ? (
+        <span className="flex items-center gap-2 font-bold tracking-tight text-ink">
+          <img src={assets.logoIcon} alt="" className="size-[20px]" />
+          <span className="text-[20px] leading-none">mintlify</span>
+        </span>
+      ) : (
+        <img src={assets.logoWordmark} alt="Mintlify" className="h-8 w-auto" />
+      )}
     </a>
   );
 }
