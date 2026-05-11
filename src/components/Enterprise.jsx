@@ -15,7 +15,7 @@ export default function Enterprise() {
           <div className="md:text-right">
             <a
               href="#"
-              className="theme-dark-button inline-flex h-10 items-center rounded-full bg-ink px-5 text-sm font-semibold transition hover:bg-ink/85"
+              className="enterprise-cta inline-flex h-10 items-center rounded-full px-5 text-sm font-semibold transition"
             >
               Explore for enterprise
             </a>
